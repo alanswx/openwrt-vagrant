@@ -6,7 +6,7 @@ cd $CHECK_DIR
 
 baseurl=<%= @base_url %>
 platform=<%= @firmware_platform %>
-wget -nv -S $baseurl$platform/packages/Packages.gz -O Packages.gz
+wget -nv -S $baseurl$platform/generic/packages/packages/Packages.gz -O Packages.gz
 r=$(zgrep base-files_ Packages.gz | sed -e 's/^.*-r\(.*\)_<%= @firmware_platform %>.ipk/\1/')
 echo $r
 

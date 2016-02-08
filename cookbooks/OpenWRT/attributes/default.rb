@@ -5,7 +5,7 @@ default["OpenWRT"]["base_url"] = "http://downloads.openwrt.org/snapshots/trunk/"
 default["OpenWRT"]["firmware_platform"] = "ar71xx"
 
 # The platform/chipset part of the OpenWRT ImageBuilder filename.
-default["OpenWRT"]["firmware_image_builder"] = "ar71xx_generic"
+default["OpenWRT"]["firmware_image_builder"] = "ar71xx-generic"
 
 # The profile we want to make.
 default["OpenWRT"]["firmware_profile"] = "WNDR3700"
