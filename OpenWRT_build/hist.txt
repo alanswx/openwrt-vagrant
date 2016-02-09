@@ -1,0 +1,35 @@
+    1  cd /tmp/OpenWRT_build
+    2  wget -v https://downloads.openwrt.org/snapshots/trunk/ar71xx/generic/OpenWrt-ImageBuilder-ar71xx_generic.Linux-x86_64.tar.bz2
+    3  wget -v https://downloads.openwrt.org/snapshots/trunk/ar71xx/generic/OpenWrt-ImageBuilder-ar71xx-generic.Linux-x86_64.tar.bz2
+    4  history | tail
+    5  ls
+    6  rm OpenWrt-ImageBuilder-ar71xx-generic.Linux-x86_64.tar.bz2 
+    7  sudo apt-get unzip
+    8  sudo apt-get install unzip
+    9  sudo apt-get bunzip2
+   10  sudo apt-get install bunzip2
+   11  bunzip2
+   12  cd /tmp/OpenWRT_build
+   13  ls
+   14  rm OpenWrt-ImageBuilder-ar71xx-generic.Linux-x86_64.tar.bz2.1
+   15  rm OpenWrt-ImageBuilder-ar71xx-generic.Linux-x86_64.tar.bz2
+   16  ls
+   17  history
+   18  sudo apt-get install libssl-dev
+   19  ls
+   20  cd OpenWrt-ImageBuilder-ar71xx-generic.Linux-x86_64/
+   21  ls
+   22  ./build
+   23  cd /vagrant_data
+   24  mkdir /vagrant_data
+   25  sudo mkdir /vagrant_data
+   26  cd /vagrant_data
+   27  ls
+   28  history > hist.txt
+   29  sudco history > hist.txt
+   30  cd /tmp/OpenWRT_build
+   31  history > hist.txt
+   32  cd /tmp/OpenWRT_build
+   33  ls
+   34  vi foo.txt
+   35  history > hist.txt

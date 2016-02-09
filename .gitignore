@@ -2,3 +2,4 @@
 .vagrant
 *.bin
 latest.txt
+OpenWRT_build/Packages.gz
