@@ -72,7 +72,8 @@ directory "/openwrt" do
   action :create
 end
 
-git '/openwrt/' do
+git '/openwrt/openwrt/' do
+  user "vagrant"
   repository 'git://git.openwrt.org/15.05/openwrt.git'
   revision 'master'
   action :sync
@@ -80,6 +81,7 @@ end
 
 
 bash 'install_feeds' do
+  user "vagrant"
   cwd '/openwrt/openwrt/'
   code <<-EOH
     ./scripts/feeds update -a
