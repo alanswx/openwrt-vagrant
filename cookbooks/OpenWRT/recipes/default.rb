@@ -13,6 +13,22 @@ bash "update-apt-package-list" do
   code "apt-get update"
 end
 
+apt_package "apache2" do
+  action :install
+end
+
+apt_package "unzip" do
+  action :install
+end
+
+apt_package "libssl-dev" do
+  action :install
+end
+
+apt_package "libxml-parser-perl" do
+  action :install
+end
+
 apt_package "build-essential" do
   action :install
 end
@@ -58,6 +74,21 @@ directory "/openwrt" do
   group "vagrant"
   mode 00755
   action :create
+end
+
+git '/openwrt/' do
+  repository 'git://git.openwrt.org/15.05/openwrt.git'
+  revision 'master'
+  action :sync
+end
+
+
+bash 'install_feeds' do
+  cwd '/openwrt/openwrt/'
+  code <<-EOH
+    ./scripts/feeds update -a
+    ./scripts/feeds install -a
+    EOH
 end
 
 template "/openwrt/check" do
