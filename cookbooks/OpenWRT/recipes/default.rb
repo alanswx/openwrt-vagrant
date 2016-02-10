@@ -53,10 +53,6 @@ apt_package "git-core" do
   action :install
 end
 
-apt_package "ia32-libs-multiarch" do
-  action :install
-end
-
 apt_package "libncurses5-dev" do
   action :install
 end
